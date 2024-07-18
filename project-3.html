@@ -43,6 +43,9 @@
               </a>
             </li>
             <li class="header__link-wrapper">
+              <a href="./index.html#hobbies" class="header__link"> Hobbies </a>
+            </li>
+            <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
           </ul>
@@ -75,6 +78,10 @@
               <a href="./index.html#projects"> Projects </a>
             </li>
 
+            <li class="header__link-wrapper">
+              <a href="./index.html#hobbies" class="header__link"> Hobbies </a>
+            </li>
+
             <li class="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
             </li>
@@ -84,16 +91,15 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 3</h1>
+        <h1 class="heading-primary">BlueShield: Enhancing Network Security with Intrusion Detection and Defense</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Identifying, exploiting, and detecting the BlueKeep vulnerability in network traffic using Snort IDS and 
+            various security tools, ultimately enhancing network security through robust intrusion detection and defense mechanisms.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="#" class="btn btn--bg" target="_blank">GitHub</a>
         </div>
       </div>
     </section>
@@ -102,7 +108,7 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
+              src="./assets/jpeg/bluekeep.jpg"
               alt="Project Image"
               class="project-details__showcase-img"
             />
@@ -111,53 +117,34 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                In this project, we focused on enhancing network security through intrusion 
+                detection and defense mechanisms using Snort IDS and IPTables. The primary task 
+                was to identify and exploit a vulnerability in one of the target machines (MarsN2.0, 
+                MarsR2.0, or MarsY2.0), with the selected vulnerability being the “Microsoft RDP 
+                RCE (CVE-2019-0708)” or BlueKeep. This vulnerability allows remote code execution by 
+                exploiting weaknesses in the Remote Desktop Protocol (RDP) service. We used Metasploit 
+                to execute the attack and analyzed the attack sequence using Wireshark to understand 
+                the data packet transmission. Snort rules were then created to detect the attack based 
+                on specific packet signatures observed during the BlueKeep exploit.
               </p>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                The Snort IDS was deployed on MarsR2.0 in intrusion detection mode, and
+                 the BlueKeep attack was executed from a Kali Linux machine against MarsY2.0. 
+                 The Snort rules successfully detected the attack, generating alerts for both 
+                 active and inactive BlueKeep attempts.
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">Snort IDS</div>
+                <div class="skills__skill">IPTables</div>
+                <div class="skills__skill">Wireshark</div>
+                <div class="skills__skill">Metasploit</div>
+                <div class="skills__skill">Kali Linux</div>
+                <div class="skills__skill">Nessus</div>
+                <div class="skills__skill">sFTP</div>
               </div>
-            </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
             </div>
           </div>
         </div>
@@ -171,35 +158,21 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ruiqi-h-1b757218b/">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://github.com/helloworld0622">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/hear_the_qi_sing/">
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
                   src="./assets/png/insta-ico.png"
@@ -209,19 +182,12 @@
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Ruiqi Huang</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              A resilient learner and curious explorer, I am always seeking 
+              new opportunities to grow and expand my knowledge.
             </p>
           </div>
-        </div>
-
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
         </div>
       </div>
     </footer>

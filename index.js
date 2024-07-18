@@ -36,3 +36,29 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelector('.hobbies__slides');
+  const slide = document.querySelectorAll('.hobbies__slide');
+  const prevButton = document.querySelector('.hobbies__button--prev');
+  const nextButton = document.querySelector('.hobbies__button--next');
+  let currentIndex = 0;
+  const totalSlides = slide.length;
+
+  function updateSlidePosition() {
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlidePosition();
+  });
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+  });
+
+  updateSlidePosition(); // Initialize the first content
+});
